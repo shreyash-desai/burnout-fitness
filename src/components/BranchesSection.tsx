@@ -125,12 +125,24 @@ const BranchesSection = () => {
       map: 'https://g.co/kgs/XZEeQ3m'
     },
     {
+      name: 'BURNOUT FITNESS MUNNEKOLALA',
+      image: BRANCH_NEW_1,
+      address: 'Munnekolala, Bangalore, Karnataka',
+      phone: '8260765803',
       map: 'https://share.google/1P5Nziuu5Xl3yxlkJ'
     },
     {
+      name: 'BURNOUT FITNESS WHITEFIELD',
+      image: BRANCH_NEW_2,
+      address: 'Whitefield, Bangalore, Karnataka',
+      phone: '8260765803',
       map: 'https://maps.app.goo.gl/6bp47uJ497SZZv8t7?g_st=aw'
     },
     {
+      name: 'BURNOUT FITNESS KADUGODI',
+      image: BRANCH_NEW_3,
+      address: 'Kadugodi, Bangalore, Karnataka',
+      phone: '8260765803',
       map: 'https://www.google.com/maps?q=15.881105422973633,74.53862762451172&z=17&hl=en'
     }
   ];
