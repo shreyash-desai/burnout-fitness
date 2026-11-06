@@ -82,7 +82,7 @@ async function compressImages() {
       let compressedBuffer;
       
       if (['.jpg', '.jpeg'].includes(ext)) {
-        compressedBuffer = await sharp(imagePath)
+        compressedBuffer = await sharp(fs.readFileSync(imagePath))
           .resize(1920, 1920, { 
             fit: 'inside', 
             withoutEnlargement: true 
@@ -94,7 +94,7 @@ async function compressImages() {
           })
           .toBuffer();
       } else if (ext === '.png') {
-        compressedBuffer = await sharp(imagePath)
+        compressedBuffer = await sharp(fs.readFileSync(imagePath))
           .resize(1920, 1920, { 
             fit: 'inside', 
             withoutEnlargement: true 
@@ -105,7 +105,7 @@ async function compressImages() {
           })
           .toBuffer();
       } else if (ext === '.webp') {
-        compressedBuffer = await sharp(imagePath)
+        compressedBuffer = await sharp(fs.readFileSync(imagePath))
           .resize(1920, 1920, { 
             fit: 'inside', 
             withoutEnlargement: true 

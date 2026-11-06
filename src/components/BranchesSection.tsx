@@ -11,6 +11,10 @@ import KASVANAHALLI from '../assets/KASVANAHALLI.jpg';
 import KADUGODI from '../assets/KADUGODI.jpg';
 import PAI_LAYOUT from '../assets/PAI LAYOUT.jpg';
 import BELGAUM from '../assets/BELGAUM.jpg';
+import BRANCH_NEW_1 from '../assets/BRANCH-NEW-1.jpg';
+import BRANCH_NEW_2 from '../assets/BRANCH-NEW-2.jpg';
+import BRANCH_NEW_3 from '../assets/BRANCH-NEW-3.jpg';
+import INDIA_MAP from '../assets/INDIA-MAP.jpg';
 
 const BranchesSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -119,6 +123,15 @@ const BranchesSection = () => {
       address: 'Burnout Fitness, Belgaum, Karnataka',
       phone: '8260765803',
       map: 'https://g.co/kgs/XZEeQ3m'
+    },
+    {
+      map: 'https://share.google/1P5Nziuu5Xl3yxlkJ'
+    },
+    {
+      map: 'https://maps.app.goo.gl/6bp47uJ497SZZv8t7?g_st=aw'
+    },
+    {
+      map: 'https://www.google.com/maps?q=15.881105422973633,74.53862762451172&z=17&hl=en'
     }
   ];
 
@@ -190,6 +203,28 @@ const BranchesSection = () => {
             </div>
           ))}
         </div>
+
+        {/* Locations Across India */}
+        <div className="mt-24">
+          <div className="text-center mb-10 section-reveal">
+            <h2 className="text-4xl md:text-5xl font-montserrat font-black text-burnout-white mb-4">
+              BURNOUT <span className="text-gradient">LOCATIONS</span> ACROSS INDIA
+            </h2>
+            <p className="text-xl text-burnout-gray-300 font-oswald max-w-3xl mx-auto">
+              15+ branches and growing — find us near you across the country
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <div className="w-full max-w-md rounded-2xl overflow-hidden border border-burnout-gray-700 shadow-2xl">
+              <img
+                src={INDIA_MAP}
+                alt="Burnout Fitness locations across India"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );
